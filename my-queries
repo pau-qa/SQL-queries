@@ -1,8 +1,0 @@
-1.Wyświetl wszystkie dane o pracownikach, którzy mieszkają w Redmond
-SELECT * FROM employees WHERE city = 'Redmond'; 
-
-
-2.Wyswietl kod i nazwe wszystkich produktow, ktore nie naleza do kategorli: Napoje
-SELECT product_code, product_name, category FROM products WHERE category NOT LIKE 'Beverages';
-
-
