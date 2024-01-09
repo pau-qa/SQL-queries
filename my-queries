@@ -1,2 +1,2 @@
-<code style="aqua : name_color">Wyświetl wszystkie dane o pracownikach, którzy mieszkają w Redmond</code>
+<code style="aqua:name_color"> Wyświetl wszystkie dane o pracownikach, którzy mieszkają w Redmond</code>
 SELECT * FROM employees WHERE city = 'Redmond'; 
