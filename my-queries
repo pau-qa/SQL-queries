@@ -7,11 +7,8 @@ Wyswietl kod i nazwe wszystkich produktow, ktore nie naleza do kategorli: Napoje
 SELECT product_code, product_name, category FROM products WHERE category NOT LIKE 'Beverages';
 
 
-### 1. Wyświetl tytuły i ceny wypożyczenia filmów, których cena wypożyczenia przekracza 9 zł. Wynik uporządkuj rosnąco według ceny wypożyczenia.
-
-```sql
+#
 SELECT tytul, cena
 FROM filmy
 WHERE cena > 9
 ORDER BY cena ASC
-```
