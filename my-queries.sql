@@ -1,8 +1,5 @@
 #SELECT/WHERE
 
---Wyświetl wszystkie dane o pracownikach, którzy mieszkają w Redmond
-SELECT * FROM employees WHERE city = 'Redmond'; 
-
 --Wyswietl kod i nazwe wszystkich produktow, ktore nie naleza do kategorli: Napoje
 SELECT product_code, product_name, category FROM products WHERE category NOT LIKE 'Beverages';
 
@@ -58,10 +55,39 @@ SELECT COUNT(*) FROM orders;
 
 --Zlicz liczbe wszystkich zamówien oplaconych kartami kredytowymi.
 SELECT COUNT(*) FROM orders WHERE payment_type LIKE 'Credit Card';
-
 SELECT MAX(shipping_fee) FROM orders;
 SELECT MIN(standard_cost) FROM products WHERE supplier_ids LIKE '1';
 SELECT AVG(shipping_fee) FROM orders WHERE shipping_fee > 0; 
 SELECT SUM(quantity) FROM order_details WHERE product_id = '43';
 SELECT MIN(standard_cost), category FROM products GROUP BY category;
 SELECT COUNT(job_title), job_title FROM customers GROUP BY job_title;
+
+#UPDATE
+
+--Zaaktualizuj wartosc jezyka obcego o id 1 na Esperanto
+SELECT * FROM language 
+UPDATE language
+SET name = 'ESPERANTO'
+WHERE language_id =1;
+
+#DELETE 
+  
+--Usun jezyk obcy Esperanto z bazy danych
+SELECT * FROM language 
+DELETE FROM language
+WHERE name = 'ESPERANTO';
+
+#ALTER TABLE
+
+--Zmien nazwę kolumny title na language_title
+ALTER TABLE language
+RENAME COLUMN title TO language_title;
+
+#JOIN
+
+--Podaj listę wszystkich zamowien zlozonych przez John Reindhardt
+SELECT * FROM Customers
+JOIN Orders 
+ON customers.customer_id = orders.customer_id
+WHERE first_name = 'John' AND last_name = 'Reinhardt';
+
