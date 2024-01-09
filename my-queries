@@ -1,2 +1,2 @@
 Wyświetl wszystkie dane o pracownikach, którzy mieszkają w Redmond
-SELECT * FROM employees WHERE city = 'Redmond'; 
+ <span style="RED"> SELECT</span> * FROM employees WHERE city = 'Redmond'; 
