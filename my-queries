@@ -1,0 +1,2 @@
+<span style="color: white"> Wyświetl wszystkie dane o pracownikach, którzy mieszkają w Redmond </span>
+SELECT * FROM employees WHERE city = 'Redmond'; 
