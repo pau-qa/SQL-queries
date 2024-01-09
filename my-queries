@@ -1,2 +1,2 @@
-Wyświetl wszystkie dane o pracownikach, którzy mieszkają w Redmond
+$${\color{red}Wyświetl wszystkie dane o pracownikach, którzy mieszkają w Redmond}$$
 SELECT * FROM employees WHERE city = 'Redmond'; 
