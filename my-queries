@@ -1,2 +1,2 @@
-<span style="color: white"> Wyświetl wszystkie dane o pracownikach, którzy mieszkają w Redmond </span>
+<font color="green"> Wyświetl wszystkie dane o pracownikach, którzy mieszkają w Redmond</font>  
 SELECT * FROM employees WHERE city = 'Redmond'; 
